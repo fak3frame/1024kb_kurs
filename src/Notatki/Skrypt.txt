@@ -60,7 +60,9 @@ Typ primitywny jest to typ wbudowany w Jave i dzieli mi je na:
         -float - 4B - 6/7 miejsc po przecinku - MUSI być litera f/F po wartości float value = 5.41F;
         -double - 8B - 15 cyfr po przecinku - mozna uzywac koncowki d/D po wartosci double value = 1.24d;
     -znakowe
+        -char - pojedynczy znak - char litera = 'a';
     -boolean (prawda/falsz)
+        -boolean - przyjmuje dwa stany - true/false - boolean isMale = true;
 
 Deklaracja zmiennej - zrobienie jej miejsca w pamieci bez nadania wartosci
 int zmienna;
@@ -69,5 +71,9 @@ Inicjalizacja zmienne - nadanie zmiennej wartosci
 zmienna = 20;
 
 Zmiennym stalym - final - mozna przypisac wartosc tylko 1 raz
+
+________________________________________________________________________________________________________________________
+
+String - zmienna obiektowa, zbudowana z tablicy znaków (char)
 
 
