@@ -1,0 +1,57 @@
+Tips:
+
+2x Shift - szukaj wszedzie
+Ctrl + Shift + A - wyszukiwarka funkcji IDE
+ALT + F12 – Open/Close Terminal
+CTRL + SHIFT + S - otwarcie ustawien IDE
+SHIFT + F10 - uruchom plikacje
+
+________________________________________________________________________________________________________________________
+
+Aplikacja Javy jest wieloplatformowa - mozna uruchomic ja na dowolnym systemie - potrzebne jest do tego tylko JRE
+JRE - Java Runtime Environment - maszyna wirtualna na ktorej uruchamiana jest aplikacja javy
+
+JDK - Java Development Kit - zestaw narzedzi do tworzenia aplikacji, zawiera kompilator, zestaw podstawowych bibliotek,
+JRE
+
+Kompilator - narzedzie zamieniajace kod rozumiany przez czlowieka na kod bajtowy rozumiany przez maszyne wirtualna javy
+- pliki *.class w ktorych zawarty jest byte code
+
+Jezyki dzielimy na:
+    -statycznie typowane
+    -dynamiczna typowane
+Java jest statycznie typowana - podczas deklaracji zmiennej podajemy co bedzie przechowywac - typ
+
+
+________________________________________________________________________________________________________________________
+
+Struktura aplikacji:
+External Libraries - biblioteki zalaczone w projekcie - pliki *.JAR - Java Archiwum
+src - folder, w którym trzymamy nasze pliki źródłowe, które później są kompilowane
+out – folder, który powinien się pojawić po skompilowaniu projektu
+
+________________________________________________________________________________________________________________________
+
+Dobre praktyki:
+-deklarować zmienne jak najpozniej jest to mozliwe
+
+________________________________________________________________________________________________________________________
+
+Zmienne dzielimy ze wzgledu na typ:
+    -prymitywny
+    -obiektowy
+Typ primitywny jest to typ wbudowany w Jave i dzieli mi je na:
+    -calkowite
+    -zmiennoprzecinkowe
+    -znakowe
+    -boolean (prawda/falsz)
+
+Deklaracja zmiennej - zrobienie jej miejsca w pamieci bez nadania wartosci
+int zmienna;
+
+Inicjalizacja zmienne - nadanie zmiennej wartosci
+zmienna = 20;
+
+Zmiennym stalym - final - mozna przypisac wartosc tylko 1 raz
+
+
