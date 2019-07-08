@@ -22,6 +22,15 @@ Jezyki dzielimy na:
     -dynamiczna typowane
 Java jest statycznie typowana - podczas deklaracji zmiennej podajemy co bedzie przechowywac - typ
 
+Typy danych zostaly okreslone aby jakbardziej optymalnie zapisywac dane w pamieci
+
+
+Operacje wykonywane przez procesor ktory pracuje w 2 stanach:
+    -wysoki (1)
+    -niski (0)
+Do wykorzystania jest 32 bity albo 64 bity
+
+
 
 ________________________________________________________________________________________________________________________
 
@@ -40,9 +49,16 @@ ________________________________________________________________________________
 Zmienne dzielimy ze wzgledu na typ:
     -prymitywny
     -obiektowy
+
 Typ primitywny jest to typ wbudowany w Jave i dzieli mi je na:
-    -calkowite
+    -calkowite (sa kodowane na 32/64 bitach)
+        -int - 4B - 32b - 2^32 - 4 mijardy
+        -long - 8B - 64b - 2^64 - mozna uzywac koncowki L/l po wartosci - long zmienna = 10L;
+        -short - 2B - 16b - 64k
+        -byte - 1B - 8b - 256
     -zmiennoprzecinkowe
+        -float - 4B - 6/7 miejsc po przecinku - MUSI być litera f/F po wartości float value = 5.41F;
+        -double - 8B - 15 cyfr po przecinku - mozna uzywac koncowki d/D po wartosci double value = 1.24d;
     -znakowe
     -boolean (prawda/falsz)
 
