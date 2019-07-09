@@ -1,5 +1,7 @@
 package Zadania;
 
+import java.util.Scanner;
+
 public class TypyDanych {
     public static void main(String[] args) {
         int a = 35;
@@ -12,5 +14,14 @@ public class TypyDanych {
         long h = 30120320323l;
         double i = 2.8123123123;
         double j = 33.;
+
+        long k = 121312412424L;
+
+        float l = 23.3f;
+
+        Scanner scanner = new Scanner(System.in);
+
+        l = scanner.nextFloat();
+
     }
 }

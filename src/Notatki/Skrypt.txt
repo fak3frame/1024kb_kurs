@@ -53,10 +53,11 @@ Zmienne dzielimy ze wzgledu na typ:
 Typ primitywny jest to typ wbudowany w Jave i dzieli mi je na:
     -calkowite (sa kodowane na 32/64 bitach)
         -int - 4B - 32b - 2^32 - 4 mijardy
-        -long - 8B - 64b - 2^64 - mozna uzywac koncowki L/l po wartosci - long zmienna = 10L;
+        -long - 8B - 64b - 2^64 - TRZEBA uzywac koncowki L/l po wartosci - long zmienna = 10L; bo inaczej traktuje jako
+        int
         -short - 2B - 16b - 64k
         -byte - 1B - 8b - 256
-    -zmiennoprzecinkowe
+    -zmiennoprzecinkowe (wartosc zmiennoprzecinkową podajemy z użyciem PRZECINKA!)
         -float - 4B - 6/7 miejsc po przecinku - MUSI być litera f/F po wartości float value = 5.41F;
         -double - 8B - 15 cyfr po przecinku - mozna uzywac koncowki d/D po wartosci double value = 1.24d;
     -znakowe
@@ -74,6 +75,57 @@ Zmiennym stalym - final - mozna przypisac wartosc tylko 1 raz
 
 ________________________________________________________________________________________________________________________
 
+Operacje matematyczne
+
+Aby wyświetlic wynik operacji wykonanej bezposrednio w print trzeba uzyc NAWIASOW!
+System.out.println("wynik a+b = " + (liczbaA+liczbaB));
+Inaczej pokaze liczby jedna po drugiej
+
+W przypadku dzielenia bezpośrenio w print wynik zostaje ustalony do typu int chyba że jedna lub wszystkie zmienne maja
+ float / double!
+int a = 3;
+int b = 2;
+System.out.println(a/b) // 1
+int a = 3;
+float b = 2;
+System.out.println(a/b) // 1.5
+
+
+Modulo %
+Operacja wylicznia reszty z dzielenia
+3%5 = 3
+5%3 = 2
+5%3%2 = 0
+
+
+________________________________________________________________________________________________________________________
+
 String - zmienna obiektowa, zbudowana z tablicy znaków (char)
 
+
+________________________________________________________________________________________________________________________
+
+Klasa Scanner
+
+Znajduje się w bibliotece java.util
+
+Podając wartość zmiennoprzecinkową uzywam PRZECINKA!
+*deklarujac wartosc zmiennej uzywam kropki
+
+Scanner scanner = new Scanner(System.in);
+int zmiennaCalkowita = scanner.nextInt();
+
+String napis;
+napis = scanner.next(); // wczyta tylko do "spacji"
+napis = scanner.nextLine(); //wczyta do "entera
+
+
+________________________________________________________________________________________________________________________
+MINI INFO WAŻNE DO ZAPIĘTANIA!
+
+Zmienna w wymaganą końcówką po wartości:
+-long x = 1234l //jesli nie uzyje koncowki potraktuje jako int
+-float x = 2.3f //uzywam . *w scanerze uzywam ,
+
+Podajac wartosc zmiennoprzecinkowa w scannerze uzywam PRZECINKA a w przypisnaiu wartosci przez = KROPKI
 
